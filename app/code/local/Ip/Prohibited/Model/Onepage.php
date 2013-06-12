@@ -1,5 +1,5 @@
 <?php
-class Ip_Prohibited_Model_Onepage extends Aitoc_Aitcheckout_Model_Rewrite_Checkout_Type_Onepage
+class Ip_Prohibited_Model_Onepage extends Mage_Checkout_Model_Type_Onepage
 {
 
 
