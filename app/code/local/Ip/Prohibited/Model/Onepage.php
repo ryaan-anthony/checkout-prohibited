@@ -25,8 +25,8 @@ class Ip_Prohibited_Model_Onepage extends Mage_Checkout_Model_Type_Onepage
                 $product = Mage::getModel('catalog/product')->load($item->getProductId());
                 foreach ($this->Restricted_Categories as $cat_id) {
                     if(in_array($cat_id, $product->getCategoryIds())){
-                    	Mage::getSingleton('checkout/session')->addError($Error_Message);
-		                Mage::throwException($Error_Message);
+                    	Mage::getSingleton('checkout/session')->addError($this->Error_Message);
+		                Mage::throwException($this->Error_Message);
 		                exit();
                     }
                 }
